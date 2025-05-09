@@ -1,0 +1,190 @@
+/* Основные стили для тёмной темы */
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: 'Raleway', sans-serif;
+}
+    
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.menu-item {
+    background-color: #332a00; /* Тёмно-жёлтый */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+    
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 193, 0, 0.2);
+}
+    
+.item-image {
+    height: 200px;
+    overflow: hidden;
+}
+    
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+    
+.menu-item:hover .item-image img {
+    transform: scale(1.05);
+}
+    
+.item-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+    
+.item-name {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffc107;
+}
+    
+.item-description {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+    
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+    
+.item-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffc107;
+}
+    
+.order-btn {
+    background: #ffc107;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+    
+.order-btn:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+    
+/* Заголовки секций */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffc107;
+    margin-bottom: 15px;
+    padding-top: 40px;
+}
+    
+.section-subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.order-btn {
+  background-color: #ffbf00;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  position: relative;
+}
+
+.order-btn:active {
+  transform: scale(0.95);
+}
+
+.added-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 1000;
+}
+
+.added-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.cart-icon {
+    position: relative;
+    color: #ffc107;
+    font-size: 1.6rem;
+    margin-left: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+  
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+  
+.cart-icon.animate {
+    animation: shake-cart 0.4s ease;
+}
+  
+@keyframes shake-cart {
+    0%   { transform: scale(1) rotate(0); }
+    25%  { transform: scale(1.2) rotate(-10deg); }
+    50%  { transform: scale(1.2) rotate(10deg); }
+    75%  { transform: scale(1.2) rotate(-10deg); }
+    100% { transform: scale(1) rotate(0); }
+}
+  
+
+    
+    /* Адаптивность */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}

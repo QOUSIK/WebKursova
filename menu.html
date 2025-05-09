@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Burger Hub</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header-area">
+        <div class="container row-align-items-center">
+            <nav class="navigation">
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li class="active"><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="right-navigation">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Google Plus"><i class="fab fa-google-plus-g"></i></a>
+                <a href="cart.html" id="cart-icon" class="cart-icon" aria-label="Корзина">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                  </a>                  
+            </div>
+        </div>
+    </header>
+
+    <main class="menu-page">
+        <section class="menu-section">
+            <h2 class="section-title">Our Burgers</h2>
+            <p class="section-subtitle">Flame-grilled perfection in every bite</p>
+            
+            <div class="menu-grid">
+                <!-- Бургер 1 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="img/mexican-burger.jpg" alt="Mexican Burger">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Mexican Bachelor</h3>
+                        <p class="item-description">Spicy beef patty with jalapeños, guacamole and our signature Mexican sauce</p>
+                        <div class="item-footer">
+                            <span class="item-price">$9.99</span>
+                            <button class="order-btn" 
+                                    data-product="Mexican Bachelor" 
+                                    data-price="9.99">
+                                ORDER NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Бургер 2 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="img/chicken-deluxe.jpg" alt="Chicken Deluxe">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Chicken Deluxe</h3>
+                        <p class="item-description">Crispy chicken fillet with bacon, cheddar and honey mustard sauce</p>
+                        <div class="item-footer">
+                            <span class="item-price">$8.99</span>
+                            <button class="order-btn" 
+                                    data-product="Chicken Deluxe" 
+                                    data-price="8.99">
+                                ORDER NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Бургер 3 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="img/Double-Cheese-Monster.jpg" alt="Double Cheese Monster">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Double Cheese Monster</h3>
+                        <p class="item-description">Two beef patties with triple cheddar and special burger sauce</p>
+                        <div class="item-footer">
+                            <span class="item-price">$11.99</span>
+                            <button class="order-btn" 
+                                    data-product="Double Cheese Monster" 
+                                    data-price="11.99">
+                                ORDER NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Бургер 4 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="img/veggie-crunch.jpg" alt="Veggie Crunch">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Veggie Crunch</h3>
+                        <p class="item-description">Vegetarian patty with avocado, crispy onions and garlic mayo</p>
+                        <div class="item-footer">
+                            <span class="item-price">$7.99</span>
+                            <button class="order-btn" 
+                                    data-product="Veggie Crunch" 
+                                    data-price="7.99">
+                                ORDER NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Бургер 5 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="img/BBQ-Bacon-King.jpg" alt="BBQ Bacon King">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">BBQ Bacon King</h3>
+                        <p class="item-description">Double beef with smoked bacon, BBQ sauce and onion rings</p>
+                        <div class="item-footer">
+                            <span class="item-price">$12.99</span>
+                            <button class="order-btn" 
+                                    data-product="BBQ Bacon King" 
+                                    data-price="12.99">
+                                ORDER NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Бургер 6 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="img/Spicy-Vegan.jpg" alt="Spicy Vegan">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name">Spicy Vegan</h3>
+                        <p class="item-description">Plant-based patty with chili sauce, lettuce and vegan mayo</p>
+                        <div class="item-footer">
+                            <span class="item-price">$8.49</span>
+                            <button class="order-btn" 
+                                    data-product="Spicy Vegan" 
+                                    data-price="8.49">
+                                ORDER NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+      <script src="js/cart.js"></script>
+</body>
+</html>
